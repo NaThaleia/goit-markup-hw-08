@@ -56,16 +56,26 @@
   color: var(--secondary-text-color);
 }
 .portfolio-items {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  margin-left: -30px;
-  margin-top: -30px;
-  & > .portfolio-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+    & > .portfolio-item {
+      margin-left: 30px;
+      margin-top: 30px;
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);
+      }
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 30px);
+      }
+    }
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .portfolio-card {
@@ -75,6 +85,9 @@
 }
 .text-hidden {
   position: absolute;
+  @media screen and (max-width: 420px) {
+    @include font($fz: 12px, $lh: 1.67);
+  }
   @include font($fz: 18px, $lh: 1.56);
   top: 0;
   left: 0;
@@ -85,7 +98,7 @@
   border-bottom: 0;
   margin: 0;
   overflow: auto;
-  transform: translateY(101%);
+  transform: translateY(100%);
   transition: transform 250ms var(--time-deploy);
   .portfolio-link:hover &,
   .portfolio-link:focus & {
@@ -99,11 +112,16 @@
 }
 
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+}
+.grow {
+  flex-grow: 1;
 }
