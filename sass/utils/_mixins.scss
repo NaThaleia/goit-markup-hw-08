@@ -1,0 +1,20 @@
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin text() {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+}
+@mixin font($fz: 16px, $lh: 1.71) {
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: 0.03em;
+}

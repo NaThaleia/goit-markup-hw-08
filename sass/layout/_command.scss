@@ -1,0 +1,82 @@
+.command {
+  background-color: #f5f4fa;
+}
+.command__list {
+  transition: box-shadow 250ms var(--time-deploy);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  & > .card__item {
+    margin-top: 30px;
+    background-color: var(--rare-text-color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+.card__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+}
+
+.command__link {
+  @include flex();
+  padding: 16px 0 0;
+  margin: 0;
+  list-style: none;
+}
+.command__link-item {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.command__link-link {
+  width: 100%;
+  height: 100%;
+  @include flex();
+  border-radius: 50%;
+  background-color: var(--rare-text-color);
+  transition: background-color 250ms var(--time-deploy);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.command__icon {
+  fill: #afb1b8;
+  transition: fill 250ms var(--time-deploy);
+  .command__link-link:hover &,
+  .command__link-link:focus & {
+    fill: var(--rare-text-color);
+  }
+}
+.names {
+  margin-bottom: 10px;
+  font-weight: 500;
+  @include text();
+}
+.profession {
+  @include text();
+  color: var(--secondary-text-color);
+}
+.text__item {
+  padding: 30px 0 24px;
+  @media screen and (min-width: 1200px) {
+    padding: 30px 0;
+  }
+}

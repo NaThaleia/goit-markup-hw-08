@@ -1,0 +1,62 @@
+.main {
+  max-width: 1600px;
+  min-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/mobile/imghero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/mobile/imghero@2x.jpg');
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/imghero.jpg');
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/imghero@2x.jpg');
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/desktop/imghero.jpg');
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/desktop/imghero@2x.jpg');
+  }
+}
+
+.main-section {
+  text-transform: uppercase;
+  font-weight: 900;
+  @include font($fz: 26px, $lh: 1.62);
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--rare-text-color);
+  max-width: 360px;
+  margin: 0 auto 30px;
+  @media screen and (min-width: 1200px) {
+    @include font($fz: 44px, $lh: 1.36);
+    max-width: 696px;
+  }
+}

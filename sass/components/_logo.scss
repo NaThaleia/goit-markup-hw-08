@@ -1,0 +1,39 @@
+@mixin logo() {
+  display: block;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+.logo {
+  @include logo();
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: auto;
+  color: #000000;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+}
+.logo__footer {
+  @include logo();
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--rare-text-color);
+}
+.color-logo {
+  color: var(--accent-color);
+}

@@ -1,0 +1,14 @@
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.logo-animation {
+  &:hover,
+  &:focus {
+    animation: fadeOut 1s both;
+  }
+}

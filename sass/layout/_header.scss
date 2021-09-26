@@ -1,0 +1,128 @@
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+.nav {
+  @media screen and (min-width: 768px) {
+    @include flex-center();
+  }
+}
+.top-nav {
+  @media screen and (min-width: 768px) {
+    @include flex-center();
+  }
+}
+.header__nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    & .header__item + .header__item {
+      margin-left: 50px;
+    }
+  }
+}
+.header__nav-right {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    & .header__item + .header__item {
+      margin-top: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    & .header__item + .header__item {
+      margin-top: 0;
+      margin-left: 30px;
+    }
+  }
+}
+.contact__link {
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    @include font($fz: 14px, $lh: 1.14);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--time-deploy);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &.current {
+      color: var(--accent-color);
+      position: relative;
+    }
+    &.current::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
+}
+.adress__icon {
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    fill: currentColor;
+    transition: fill 250ms var(--time-deploy);
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+.adress__link {
+  @media screen and (min-width: 768px) {
+    @include flex-center();
+    font-weight: 500;
+    @include font($fz: 12px, $lh: 1.16);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color 250ms var(--time-deploy);
+    @media screen and (min-width: 1200px) {
+      padding: 32px 0;
+      @include font($fz: 14px, $lh: 1.14);
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+// Mobile
+.menu__button {
+  // display: inline-flex;
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  & .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+.menu__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  &.is-open {
+    display: block;
+  }
+}

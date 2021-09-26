@@ -1,0 +1,136 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer-position {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer__nav-link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  transition: text-shadow 250ms var(--time-deploy);
+  @include font($fz: 14px, $lh: 1.71);
+  &:hover,
+  &:focus {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+.footer__nav {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    .footer__nav-item + .footer__nav-item {
+      margin-top: 8px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer__nav-item + .footer__nav-item {
+      margin-top: 9px;
+    }
+  }
+}
+.adr {
+  color: var(--rare-text-color);
+}
+.footer__nav-left {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+}
+.footer-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--rare-text-color);
+  font-weight: bold;
+  @include font($fz: 14px, $lh: 1.14);
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__list {
+  @include flex();
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer__link-item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer__link {
+  width: 100%;
+  height: 100%;
+  @include flex();
+  border-radius: 50%;
+  color: var(--rare-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--time-deploy);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer__icon {
+  fill: currentColor;
+}
+.subscribe__button-icon {
+  fill: var(--rare-text-color);
+  margin-left: 10px;
+}
+.subscription__form {
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+  }
+}
+.mail-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    margin: 20px auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    padding-left: 12px;
+    margin-right: 12px;
+  }
+
+  &::placeholder {
+    @include font($fz: 16px, $lh: 1.25);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
