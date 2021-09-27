@@ -213,4 +213,5 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity 250ms var(--time-deploy), visibility 250ms var(--time-deploy);
 }
