@@ -112,6 +112,7 @@
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 2;
   .container {
     padding-left: 40px;
     position: relative;
@@ -119,6 +120,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 .menu__button-open,

@@ -260,6 +260,7 @@ body.modal-open {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  z-index: 2;
 }
 
 .mobile__menu-container .container {
@@ -269,6 +270,12 @@ body.modal-open {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__menu-container {
+    display: none;
+  }
 }
 
 .menu__button-open,
