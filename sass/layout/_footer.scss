@@ -47,12 +47,14 @@
   color: var(--rare-text-color);
 }
 .footer-title {
+  margin-top: 60px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--rare-text-color);
   font-weight: bold;
   @include font($fz: 14px, $lh: 1.14);
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
@@ -97,6 +99,7 @@
   margin-left: 10px;
 }
 .subscription__form {
+  margin-top: 60px;
   text-align: center;
   position: relative;
 

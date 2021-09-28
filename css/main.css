@@ -978,6 +978,8 @@ button {
 }
 
 .footer-title {
+  margin-top: 60px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--rare-text-color);
   font-weight: bold;
@@ -986,9 +988,9 @@ button {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer-title {
-    margin-top: 60px;
+    margin-top: 0;
   }
 }
 
@@ -1048,6 +1050,7 @@ button {
 }
 
 .subscription__form {
+  margin-top: 60px;
   text-align: center;
   position: relative;
 }
