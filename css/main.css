@@ -1192,8 +1192,10 @@ button {
   }
 }
 
-.portfolio-items .portfolio-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .portfolio-items .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-card {
