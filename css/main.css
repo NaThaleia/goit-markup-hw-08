@@ -1368,6 +1368,10 @@ button {
   margin-bottom: 4px;
 }
 
+.data-form-input:focus + .data-form-label {
+  color: var(--accent-color);
+}
+
 .data-icon {
   position: absolute;
   left: 15px;
