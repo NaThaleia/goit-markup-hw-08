@@ -438,6 +438,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo__footer {
+    text-align: left;
+  }
+}
+
 .color-logo {
   color: var(--accent-color);
 }
@@ -626,7 +632,7 @@ button {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
     line-height: 1.16;
@@ -663,6 +669,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -670,6 +677,7 @@ button {
   .service__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -969,14 +977,7 @@ button {
   color: var(--rare-text-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__nav-left {
-    margin-right: 165px;
-  }
-}
-
 .footer-title {
-  text-align: center;
   text-transform: uppercase;
   color: var(--rare-text-color);
   font-weight: bold;
@@ -994,6 +995,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-title {
     margin-bottom: 20px;
+    text-align: left;
   }
 }
 
@@ -1046,7 +1048,6 @@ button {
 }
 
 .subscription__form {
-  margin-top: 60px;
   text-align: center;
   position: relative;
 }
@@ -1056,6 +1057,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 570px;
+    margin-top: 0;
   }
 }
 
@@ -1119,12 +1121,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-}
-
-@media screen and (min-width: 150px) and (max-width: 767px) {
-  .portfolio-buttons {
-    margin-top: -21px;
-  }
+  margin-top: -21px;
 }
 
 @media screen and (min-width: 768px) {

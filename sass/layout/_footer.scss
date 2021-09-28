@@ -46,13 +46,7 @@
 .adr {
   color: var(--rare-text-color);
 }
-.footer__nav-left {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 165px;
-  }
-}
 .footer-title {
-  text-align: center;
   text-transform: uppercase;
   color: var(--rare-text-color);
   font-weight: bold;
@@ -62,6 +56,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
+    text-align: left;
   }
 }
 
@@ -102,13 +97,14 @@
   margin-left: 10px;
 }
 .subscription__form {
-  margin-top: 60px;
   text-align: center;
   position: relative;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     width: 570px;
+    margin-top: 0;
   }
 }
 .mail-input {
