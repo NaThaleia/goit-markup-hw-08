@@ -264,7 +264,6 @@ body.modal-open {
 }
 
 .mobile__menu-container .container {
-  padding-left: 40px;
   position: relative;
   display: flex;
   flex-direction: column;
