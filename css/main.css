@@ -1001,6 +1001,12 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__nav-middle {
+    margin-left: 168px;
+  }
+}
+
 .footer__list {
   display: flex;
   align-items: center;
