@@ -111,7 +111,7 @@
   height: 15px;
   cursor: pointer;
   border-radius: 2px;
-  border: 2px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid var(--primary-text-color);
   margin-right: 7px;
   fill: var(--rare-text-color);
   transition: border-color 250ms var(--time-deploy), background-color 250ms var(--time-deploy);
