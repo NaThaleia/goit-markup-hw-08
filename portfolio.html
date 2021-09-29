@@ -66,7 +66,12 @@
           </li>
         </ul>
         <!-- Кнопка-бургер -->
-        <button type="button" class="menu__button-open" data-menu-button>
+        <button
+          type="button"
+          class="menu__button-open"
+          aria-label="Открывает кнопку мобильного меню"
+          data-menu-button
+        >
           <svg width="40" height="40">
             <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
           </svg>
@@ -76,7 +81,12 @@
       <!-- Мобильное меню -->
       <div class="mobile__menu-container is-hidden">
         <div class="container">
-          <button type="button" class="menu__button-close" data-menu-button>
+          <button
+            type="button"
+            class="menu__button-close"
+            aria-label="Закрывает кнопку мобильного меню"
+            data-menu-button
+          >
             <svg width="40" height="40">
               <use class="icon-menu" href="./images/symbol-defs.svg#closem"></use>
             </svg>
@@ -158,16 +168,50 @@
           <h1 class="main-title visually-hidden">Портфолио</h1>
           <!-- Секция с кнопками -->
           <ul class="portfolio-buttons list">
-            <li class="item"><button class="style-scope-button" type="button">Все</button></li>
             <li class="item">
-              <button class="style-scope-button" type="button">Веб-сайты</button>
+              <button
+                class="style-scope-button"
+                type="button"
+                aria-label="Открывает кнопку всех проектов"
+              >
+                Все
+              </button>
             </li>
             <li class="item">
-              <button class="style-scope-button" type="button">Приложения</button>
+              <button
+                class="style-scope-button"
+                type="button"
+                aria-label="Открывает кнопку веб сайтов"
+              >
+                Веб-сайты
+              </button>
             </li>
-            <li class="item"><button class="style-scope-button" type="button">Дизайн</button></li>
             <li class="item">
-              <button class="style-scope-button" type="button">Маркетинг</button>
+              <button
+                class="style-scope-button"
+                type="button"
+                aria-label="Открывает кнопку приложений"
+              >
+                Приложения
+              </button>
+            </li>
+            <li class="item">
+              <button
+                class="style-scope-button"
+                type="button"
+                aria-label="Открывает кнопку с дизайнами"
+              >
+                Дизайн
+              </button>
+            </li>
+            <li class="item">
+              <button
+                class="style-scope-button"
+                type="button"
+                aria-label="Открывает кнопку с маркетингом"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- Секция с карточками. Скрытый заголовок -->
@@ -878,7 +922,11 @@
             maxlength="50"
             required
           />
-          <button type="submit" class="button subscribe__button">
+          <button
+            type="submit"
+            class="button subscribe__button"
+            aria-label="Открывает кнопку с подпиской"
+          >
             Подписаться
             <svg class="subscribe__button-icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#send"></use>
