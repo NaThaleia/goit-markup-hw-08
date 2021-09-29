@@ -30,7 +30,9 @@
       <div class="nav container">
         <!-- Навигация. Логотип-ссылка с текстом-->
         <nav class="top-nav">
-          <a href="./index.html" class="logo logo-animation"><span class="color-logo">Web</span>Studio</a>
+          <a href="./index.html" class="logo logo-animation"
+            ><span class="color-logo">Web</span>Studio</a
+          >
           <!-- Навигация. Информация и контакты -->
           <ul class="header__nav list">
             <li class="header__item">
@@ -63,22 +65,22 @@
           </li>
         </ul>
         <!-- Кнопка-бургер -->
-          <button type="button" class="menu__button-open" data-menu-button>
+        <button type="button" class="menu__button-open" data-menu-button>
           <svg width="40" height="40">
             <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
           </svg>
-        </button>      
-        </div>
+        </button>
       </div>
+
       <!-- Мобильное меню -->
-        <div class="mobile__menu-container is-hidden">
-          <div class="container">
-            <button type="button" class="menu__button-close" data-menu-button>
-              <svg width="40" height="40">
-                <use class="icon-menu" href="./images/symbol-defs.svg#closem"></use>
-              </svg>
-            </button>
-            <div class="mobile__menu">
+      <div class="mobile__menu-container is-hidden">
+        <div class="container">
+          <button type="button" class="menu__button-close" data-menu-button>
+            <svg width="40" height="40">
+              <use class="icon-menu" href="./images/symbol-defs.svg#closem"></use>
+            </svg>
+          </button>
+          <div class="mobile__menu">
             <ul class="mobile__menu-list list">
               <li class="mobile__menu-item">
                 <a href="" class="mobile__menu-link">Студия</a>
@@ -90,8 +92,8 @@
                 <a href="" class="mobile__menu-link">Контакты</a>
               </li>
             </ul>
-            </div>
-            <div class="mobile__menu-contacts">
+          </div>
+          <div class="mobile__menu-contacts">
             <ul class="mobile_contacts-list list">
               <li class="mobile__contacts-item">
                 <a href="tel:+380961111111" class="mobile__contacts-link mobile__contacts-style"
@@ -99,45 +101,61 @@
                 >
               </li>
               <li class="mobile__contacts-item">
-                <a href="mailto:info@devstudio.com" class="mobile__contacts-link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="mobile__contacts-link"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
             <ul class="mobile_social-list list">
               <li class="mobile__social-item">
-                <a href="https://www.instagram.com/"
-      
-                      target="_blank"
-                      rel="noopener noreferrer" 
-                      class="mobile__social-link">Instagram</a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile__social-link"
+                  >Instagram</a
+                >
               </li>
               <li class="mobile__social-item">
-                <a href="https://twitter.com/"
-      
-                      target="_blank"
-                      rel="noopener noreferrer"  class="mobile__social-link">Twitter</a>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile__social-link"
+                  >Twitter</a
+                >
               </li>
               <li class="mobile__social-item">
-                <a href="https://www.facebook.com/"
-      
-                      target="_blank"
-                      rel="noopener noreferrer"  class="mobile__social-link">Facebook</a>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile__social-link"
+                  >Facebook</a
+                >
               </li>
               <li class="mobile__social-item">
-                <a href="https://linkedin.com/"
-      
-                      target="_blank"
-                      rel="noopener noreferrer"  class="mobile__social-link">LinkedIn</a>
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile__social-link"
+                  >LinkedIn</a
+                >
               </li>
             </ul>
-            </div>
-            </div>
           </div>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Главный блок -->
       <section class="main">
         <div class="container">
-          <h1 class="main-section">Эффективные решения<br> для вашего бизнеса</h1>
+          <h1 class="main-section">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
           <!-- Кнопка заказа услуги. Вызывает модальное окно -->
           <button type="button" class="button__primary" data-modal-open>Заказать услугу</button>
         </div>
@@ -241,7 +259,6 @@
               <picture>
                 <source
                   srcset="./images/desktop/box3.webp 1x, ./images/desktop/box3@2x.webp 2x"
-  
                   media="(min-width:1200px)"
                   type="image/web"
                 />
@@ -747,7 +764,7 @@
         <!-- Правая сторона с подпиской -->
         <div class="subscription"></div>
         <!-- Форма "подпишитесь на рассылку" -->
-        
+
         <form class="subscription__form">
           <label for="mail" class="footer-title">Подпишитесь на рассылку</label>
           <input
